@@ -1,0 +1,251 @@
+/* *{
+    margin: 0;
+} */
+
+.outer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  height: 100vh;
+}
+
+.inner-container {
+  grid-column: span 2;
+  background-color: #332f34;
+  color: #dfd4c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  margin-bottom: 42px;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  padding: 0 77px 0 77px;
+  font-family: "Hanken Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+#btn-1 {
+  padding-left: 77px;
+}
+
+.para {
+  font-size: 1.5rem;
+  padding: 0 77px 0 77px;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+button {
+  background-color: #dfd4c5;
+  color: #332f34;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+button:hover{
+  background-color: #9c9a96;
+  color: white;
+  transition: 0.5s;
+}
+
+.section-2 {
+  grid-column: span 1;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.container-1 {
+  background-color: #dfd4c5;
+  padding-bottom: 50px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 76.8px;
+  font-size: 2rem;
+}
+
+.lower {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 77px 0 77px;
+  gap: 25px;
+}
+
+.lower-div {
+  grid-column: span 1;
+  font-size: 1rem;
+}
+
+.h2 {
+  font-size: 1.6rem;
+  font-family: "Hanken Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+.p-lower {
+  font-size: 1.2rem;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.footer{
+  background-color: #615657;
+  padding: 0;
+  margin: 0;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.socialIcons a{
+  background-color: #9c9a96;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  color: #332f34;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.socialIcons a:hover{
+  background-color: #332f34;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+  color: #9c9a96;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.footernav ul{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.footernav ul li{
+  list-style: none;
+
+}
+
+.footernav ul li a{
+  text-decoration: none;
+  color: #dfd4c5;
+  margin: 20px;
+  font-size: 1.2rem;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+.footernav ul li a:hover{
+  color: #332f34;
+  transition: 0.5s;
+}
+
+.footer-bottom{
+  background-color: #332f34;
+  padding: 10px;
+  text-align: center;
+  color: #dfd4c5;
+}
+
+@media (max-width: 768px) {
+  .outer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .inner-container {
+    grid-column: span 1;
+  }
+
+  .section-2 {
+    display: none;
+  }
+
+  .section-3 {
+    padding-top: 0;
+    text-align: center; /* Center the text */
+  }
+
+  .lower {
+    grid-template-columns: 1fr;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .lower-div {
+    grid-column: span 1;
+    margin-bottom: 20px; /* Add margin to separate sections */
+  }
+}
+
+@media (max-width: 500px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .para {
+    font-size: 1.2rem;
+  }
+
+  .section-3 {
+    font-size: 1.5rem;
+    padding-top: 0;
+    text-align: center; /* Center the text */
+  }
+
+  .h2 {
+    font-size: 1.2rem;
+  }
+
+  .p-lower {
+    font-size: 1rem;
+  }
+
+  .lower {
+    grid-template-columns: 1fr;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .lower-div {
+    grid-column: span 1;
+    margin-bottom: 15px; /* Add margin to separate sections */
+  }
+}
